@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    max-width: 800px;
+    margin: auto;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, .main {
+    text-align: center;
+}
+
+#task-list {
+    padding-top: 20px;
+    list-style-type: none;
+    display: contents;
+}
+
+li {
+    margin: 0 0 20px;
+}
+
+.add-task {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.task, input[type='checkbox'] {
+    float: left;
+}
+
+#add-task-button {
+    height: 35px;
+    width: 95px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    background-color: #c8b8db;
+}
+
+#add-task-button:hover {
+    background-color: #9a72cb;
+    cursor: pointer;
+}
+
+#input-task {
+    border-width: 0 0 2px;
+    border-color: #9a72cb;
+    outline: none;
+    font-size: large;
+    font-weight: bold;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.delete-btn {
+    background-color: red;
+    border: none;
+    color: #fff;
+    border-radius: 50%;
+    float: right;
+}
+
+.delete-btn:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+.task {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.done {
+    text-decoration: line-through;
+}
